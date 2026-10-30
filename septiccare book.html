@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | SepticCare</title>
+    <link rel="stylesheet" href="septiccare book.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- Top Right Controls -->
+<div class="booking-top-controls">
+
+    <button class="Rtl-toggle" id="rtl-toggle" type="button"
+            title="Toggle RTL">
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+    </button>
+
+    <button class="theme-toggle" id="theme-toggle" type="button"
+            title="Toggle Dark Mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+</div>
+
+<section class="booking-section">
+    <div class="booking-container">
+
+        <div class="brand">
+            <div class="brand-icon">
+                <a href="index.html">
+                <img src="images/main_logo.jpg(1) - Copy.png" alt="septiccare-logo"></a>
+            </div>
+            <div>
+                <h2>SepticCare</h2><hr>
+                <p>Clean Tanks. Healthy Homes.</p>
+            </div>
+        </div>
+
+        <p class="breadcrumb">SEPTICCARE / BOOK YOUR SERVICE</p>
+
+        <h1>Book Your Septic Service.</h1>
+
+        <p class="intro">
+            Choose your service and preferred time. Tell us what you need,
+            and our team will get in touch with you.
+        </p>
+
+        <div class="notice">
+            Please provide your details below. Your request will be reviewed
+            by our team before your appointment is confirmed.
+        </div>
+
+        <form id="bookingForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number"
+                           pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Required *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option>Septic Tank Pumping</option>
+                        <option>Septic Tank Cleaning</option>
+                        <option>Septic Tank Inspection</option>
+                        <option>Septic Tank Installation</option>
+                        <option>Septic System Maintenance</option>
+                        <option>Drain Cleaning</option>
+                        <option>Emergency Septic Repair</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time *</label>
+                    <select id="time" name="time" required>
+                        <option value="">Choose a time</option>
+                        <option>09:00 AM - 11:00 AM</option>
+                        <option>11:00 AM - 01:00 PM</option>
+                        <option>01:00 PM - 03:00 PM</option>
+                        <option>03:00 PM - 05:00 PM</option>
+                        <option>05:00 PM - 07:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority">
+                        <option>Standard Visit</option>
+                        <option>Urgent Visit</option>
+                        <option>Emergency Visit</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Service Address *</label>
+                    <input type="text" id="address" name="address"
+                           placeholder="Enter your complete address" required>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="problem">Problem Description *</label>
+                    <textarea id="problem" name="problem" rows="4"
+                        placeholder="Describe the septic tank issue and its location."
+                        required></textarea>
+                </div>
+
+            </div>
+
+            <label class="consent">
+                <input type="checkbox" id="consent" required>
+                <span>I understand that this is a service request and
+                my appointment is not confirmed until the team contacts me.</span>
+            </label>
+
+            <button type="submit" class="submit-btn">
+                Submit Booking <span>↗</span>
+            </button>
+
+            <p id="message" role="status"></p>
+
+        </form>
+
+    </div>
+</section>
+
+<script>
+    // RTL Toggle
+    const rtlButton = document.getElementById("rtl-toggle");
+
+    rtlButton.addEventListener("click", function () {
+        document.body.classList.toggle("rtl");
+
+        document.documentElement.dir =
+            document.body.classList.contains("rtl") ? "rtl" : "ltr";
+    });
+
+    // Theme Toggle
+    const themeButton = document.getElementById("theme-toggle");
+
+    themeButton.addEventListener("click", function () {
+
+        document.body.classList.toggle("light-theme");
+
+        const icon = themeButton.querySelector("i");
+
+        if (document.body.classList.contains("light-theme")) {
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+        } else {
+            icon.classList.remove("fa-sun");
+            icon.classList.add("fa-moon");
+        }
+    });
+    const dateInput = document.getElementById("date");
+
+    const today = new Date();
+    dateInput.min = new Date(
+        today.getTime() - today.getTimezoneOffset() * 60000
+    ).toISOString().split("T")[0];
+
+    document.getElementById("bookingForm").addEventListener("submit",
+        function(event) {
+            event.preventDefault();
+
+            document.getElementById("message").textContent =
+                "Form validated successfully. Please connect a booking service to receive requests.";
+
+            document.getElementById("message").style.color = "#167653";
+        }
+    );
+</script>
+
+</body>
+</html>

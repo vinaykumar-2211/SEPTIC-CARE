@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact - Septic Care | Clean Tanks. Healthy Homes.</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="images/SEPTICARE LOGO.jpg">
+    <link rel="stylesheet" href="septiccarecontact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+     <header>
+        <nav class="nav-bar">
+          <div class="brand">
+            <div class="brand-logo">
+                <img src="images/main_logo.jpg(1) - Copy.png" alt="septiccare-logo">
+            </div>
+            <div class="brand-title">
+                <H1> Septic Care</H1><hr>
+                <p>Clean Tanks. Healthy Homes.</p>
+            </div>
+          </div>
+            <div class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="home-btn">Home <span class="caret"><i class="fa-solid fa-caret-down"></i></span></a> |
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home Classic</a></li>
+                        <li><a href="septiccarehome.html">Home Standard</a></li>
+                    </ul>
+                </li>
+                <a href="SEPTICCAREABOUT.HTML"> About Us </a>|
+                <a href="SEPTICCARESERVICES.HTML"> Services </a>|
+                <a href="SEPTICAREPRICING.HTML"> Pricing </a>|
+                <a href="septiccareblogs.html"> Blogs </a>|
+                <a href="septiccarecontact.html"  class="nav-link active">Contact </a>
+            </div>
+            <div class="toggles">
+                <button class="Rtl-toggle" id="rtl-toggle"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                <button class="theme-toggle" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a class="Login-btn" href="septiccare book.html"> Book Now </a>
+                 <button class="menu-toogle" id="menu-toogle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="bg-image">
+            <div class="content">
+                <h1>We’d Love to Hear <br> From You</h1>
+                <p>Have questions about our septic services, need help choosing the right maintenance plan,<br>
+                    or want to book a free inspection? Our SepticCare team is here to help you keep your system<br>
+                    clean, safe, and running smoothly.</p>
+            </div>
+        </div>
+        <div class="Contact-container">
+            <div class="Contact-card">
+                <i class="fa-solid fa-building"></i>
+                <p> OUR OFFICE </p>
+                <h2> Hyderabad, India</h2>
+                <h3> Kukkatpally, Hyderabad - 500100</h3>
+            </div>
+            <div class="Contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <p> CALL US </p>
+                <h2>+91 98765 43210 </h2>
+            </div>
+            <div class="Contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <p> EMAIL US </p>
+                <h2> support@Septiccare.com</h2>
+                
+            </div>
+            <div class="Contact-card">
+                <i class="fa-solid fa-headset"></i>
+                <p> LIVE CHAT </p>
+                <h2> Available 24/7</h2>
+                <h3> Chat with our AI support team anytime</h3>
+            </div>
+        </div>
+    </section>
+    
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="contact-container">
+
+        <!-- Contact Form -->
+        <div class="contact-form-box">
+            <h2>How Can We Help You?</h2>
+
+            <p class="contact-intro">
+                Fill in the form below and our septic care team
+                will contact you as soon as possible.
+            </p>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName"
+                            placeholder="First Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName"
+                            placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email"
+                            placeholder="Email Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone"
+                            placeholder="Phone Number"
+                            pattern="[0-9+\s()-]{10,20}" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City / Location *</label>
+                        <input type="text" id="city"
+                            placeholder="Enter your location" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Required *</label>
+                        <select id="service" required>
+                            <option value="">Select a service</option>
+                            <option>Septic Tank Installation</option>
+                            <option>Septic Tank Pumping</option>
+                            <option>Septic Tank Maintenance</option>
+                            <option>Septic Tank Inspection</option>
+                            <option>Drain Cleaning</option>
+                            <option>Emergency Repairs</option>
+                            <option>Waste Removal</option>
+                            <option>Grease Trap Cleaning</option>
+                            <option>Other Services</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="urgency">When Do You Need Service?</label>
+                    <select id="urgency">
+                        <option value="">Select a time</option>
+                        <option>As Soon As Possible</option>
+                        <option>Within 24 Hours</option>
+                        <option>Within This Week</option>
+                        <option>Schedule for Later</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" rows="5"
+                        placeholder="Tell us about your septic tank problem..."
+                        required></textarea>
+                </div>
+
+                <label class="consent">
+                    <input type="checkbox" required>
+                    I agree to be contacted regarding my service request.
+                </label>
+
+                <button type="submit" class="contact-submit">
+                    Send Enquiry <span>→</span>
+                </button>
+
+                <p class="form-status" id="formStatus"
+                    role="status" aria-live="polite"></p>
+
+                <p class="privacy-note">
+                    <i class="fa-solid fa-lock"></i>
+                    Your information will be used to respond to your enquiry.
+                </p>
+
+            </form>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="contact-sidebar">
+
+            <!-- Office Hours -->
+            <div class="contact-card">
+                <h3>
+                    <i class="fa-regular fa-clock"></i>
+                    Office Hours
+                </h3>
+
+                <div class="hours-row">
+                    <span>Monday – Friday</span>
+                    <span>9:00 AM – 7:00 PM</span>
+                    <span class="status-open">Available</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Saturday</span>
+                    <span>10:00 AM – 5:00 PM</span>
+                    <span class="status-open">Available</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Sunday</span>
+                    <span>By Appointment</span>
+                    <span class="status-closed">Check</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Emergency Service</span>
+                    <span>Call for Availability</span>
+                    <span class="status-open">Contact</span>
+                </div>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="contact-card">
+                <h3>
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Follow Us
+                </h3>
+
+                <div class="social-grid">
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Request a Quote -->
+            <div class="contact-card quote-card">
+                <i class="fa-solid fa-truck-droplet quote-icon"></i>
+                <h3>Need Septic Service?</h3>
+
+                <p>
+                    Get in touch with our team for septic tank
+                    installation, cleaning, maintenance and repairs.
+                </p>
+
+                <a href="septiccare book.html" class="quote-button">
+                    Request a Quote
+                </a>
+
+                <a href="tel:+919876543210" class="call-button">
+                    <i class="fa-solid fa-phone"></i> Call Us
+                </a>
+            </div>
+
+        </aside>
+    </div>
+</section>
+<section>
+    <div class="location">
+        <h1>Visit Us in<span> Hyderabad</span></h1>
+        <P> Our Office is in Kukkatpally, Hyderabad — a short drive from the city centre</P>
+    </div>
+    <div class="location-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60886.1377244683!2d78.36359281047314!3d17.48919220409826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91ec0162f43d%3A0x3288c6fe4358cf48!2sKukatpally%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1792154403759!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+
+        </iframe>
+    </div>    
+
+</section>
+<section class="faq-section">
+
+    <div class="faq-heading">
+        <span>HAVE QUESTIONS?</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>
+            Find answers to common questions about our
+            septic tank cleaning and maintenance services.
+        </p>
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How often should a septic tank be cleaned?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Generally, septic tanks should be inspected every
+                    1–3 years and pumped when necessary, depending on
+                    tank size, household usage and sludge levels.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What services does Septic Care provide?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    We provide septic tank cleaning, pumping,
+                    maintenance, inspection, waste removal and
+                    emergency septic services.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How can I book a septic tank cleaning service?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    You can contact us through our website contact
+                    form or call our customer support team to
+                    schedule an appointment.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you provide emergency septic services?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Yes, you can contact our team for urgent septic
+                    tank problems, blockages and overflow issues.
+                    Service availability depends on your location.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How much does septic tank cleaning cost?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    The cost depends on tank size, cleaning
+                    requirements, location and service type.
+                    Contact us for a service estimate.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Why is regular septic tank maintenance important?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    Regular maintenance helps prevent blockages,
+                    unpleasant odours, sewage backups and costly
+                    repairs while keeping your septic system healthy.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="faq-contact">
+        <h3>Still Have Questions?</h3>
+        <p>Our team is ready to help you with your septic care needs.</p>
+        <a href="SEPTICCARECONTACT.HTML#contact-form">
+            Contact Us <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+
+</section>
+    <footer class="footer-image">
+        <div class="footer-bar">
+            <div class="footer-box">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/main_logo.jpg(1) - Copy.png" alt="septiccare-logo">
+                    </div>
+                    <div class="footer-title">
+                        <h1>Septic Care</h1><hr>
+                        <p>Clean Tanks. Healthy Homes.</p><br>
+                    </div>
+                </div>
+                <p class="footer-para">
+                    We believe in quality service, honest pricing,
+                    and customer satisfaction.From routine maintenance
+                    to emergency repairs, we provide dependable
+                    solutions tailored to your needs, keeping your
+                    septic system clean, safe, and trouble-free.
+                </p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" aria-label="Telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div> 
+            <div class="footer-box1">
+                <h3>Quick Links</h3>
+                <p><i class="fa-solid fa-chevron-right"></i> Home</p>
+                <p><i class="fa-solid fa-chevron-right"></i> About Us</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Services</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Pricing</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Blogs</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Contact</p>
+            </div>
+            <div class="footer-box2">
+                <h3>Services</h3>
+                <p><i class="fa-solid fa-chevron-right"></i> Septic Tank Installation</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Septic Tank Pumping</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Septic Tank Maintenance</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Septic Tank Inspection</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Drain Cleaning</p>
+                <p><i class="fa-solid fa-chevron-right"></i>Emergency Repairs</p>
+            </div>
+            <div class="footer-box3">
+                <h3>Customer Support</h3>
+                <p><i class="fa-solid fa-chevron-right"></i> FAQ'S</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Warranty Information</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Service Areas</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Pricing</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Schedule a Service</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Request a Quote</p>
+            </div>
+            <div class="footer-box4">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-envelope"></i> support@Septiccare.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana</p> 
+            </div> 
+        </div>
+        <div class="footer-bottom">
+
+                <p>© 2026 Septic Care. All Rights Reserved.</p>
+
+                <p>Made with ❤️ in Hyderabad</p>
+
+            </div> 
+    </footer>
+    
+    <script>
+        const homeBtn = document.querySelector(".home-btn");
+   const dropdown = document.querySelector(".dropdown");
+   if (homeBtn && dropdown) {
+    homeBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        dropdown.classList.toggle("active");
+    });
+    document.addEventListener("click", function (event) {
+        if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove("active");
+        }
+    });
+}
+
+let rtlButton =document.getElementById("rtl-toggle");
+         rtlButton.addEventListener("click", function(){
+            if(document.documentElement.dir==="ltr"){
+                document.documentElement.dir="rtl";
+                rtlButton.innerHTML='<i class="fa-solid fa-arrow-right-arrow-left"></i>';
+            }
+            else{
+                document.documentElement.dir="ltr";
+                rtlButton.innerHTML='<i class="fa-solid fa-arrow-right-arrow-left"></i>';
+
+            }
+        })
+
+ let themebutton= document.getElementById("theme-toggle");
+         themebutton.addEventListener("click", function(event){
+            event.preventDefault();
+        document.body.classList.toggle("dark");
+        if(document.body.classList.contains("dark")){
+            themebutton.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        }
+        else{
+            themebutton.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        }
+      }) 
+      
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+
+        faqItems.forEach((otherItem) => {
+            if (otherItem !== item) {
+                otherItem.classList.remove("active");
+            }
+        });
+
+        item.classList.toggle("active");
+
+    });
+
+});
+
+    </script>
+</body>
+</html>
